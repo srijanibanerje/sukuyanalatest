@@ -1,0 +1,67 @@
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Scrolling track */
+.marquee {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+
+  animation: marquee 20s linear infinite;
+}
+
+/* Pause on hover */
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Logos */
+.marquee img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.marquee img:hover {
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .marquee {
+    gap: 25px;
+    animation-duration: 18s;
+  }
+
+  .marquee img {
+    height: 60px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .marquee {
+    gap: 15px;
+    animation-duration: 15s;
+  }
+
+  .marquee img {
+    height: 45px;
+  }
+}

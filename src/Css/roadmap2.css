@@ -1,0 +1,119 @@
+#backcover {
+  /* background-size: cover; */
+  background-position: center;
+  padding: 50px 0;
+  background-repeat: no-repeat; background-size: cover; background-attachment: fixed; 
+}
+
+.roadmap-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.cardbody{
+  font-size: 20px;
+}
+
+.phase {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Vertical line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #00ffcc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline item */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Left side */
+.timeline-item.left {
+  left: 0;
+}
+
+/* Right side */
+.timeline-item.right {
+  left: 50%;
+}
+
+/* Card styling */
+.timeline-item .card {
+  border-radius: 12px;
+
+  /* Transparent glass effect */
+  background: rgba(255, 255, 255, 0.08);  /* halka transparent */
+  backdrop-filter: blur(6px);             /* glass feel */
+  -webkit-backdrop-filter: blur(6px);
+
+  color: white;
+
+  /* Soft shadow (not heavy) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  /* Optional subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Circle */
+/* .timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 15px;
+  height: 15px;
+  background: #00ffcc;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -8px;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+} */
+
+/* 📱 Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.left {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 10px;
+  }
+}

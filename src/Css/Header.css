@@ -1,0 +1,142 @@
+@font-face
+{
+  font-family: myFont;
+  src: url(japa.ttf);
+}
+
+#text{
+  font-family: myFont;
+  color: rgb(16, 191, 16);
+  font-size: 40px;
+  
+}
+.head{
+  font-family: myFont;
+  /* color: linear-gradient(to bottom, #fafa03 14%, #307918 100%); */
+  background: linear-gradient( #e0de36 , #f60707);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* font-weight: 500; */
+}
+
+.item{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img
+{
+	max-width: 100%;
+}
+
+
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+#burn :hover{
+    color: rgb(243, 50, 50);
+}
+
+.text1{
+    color: white;
+    font-size: 40px;
+    font-family: myFont;
+   
+}
+
+.buybutton{
+  
+    background: linear-gradient(to bottom, #fafa03 14%, #307918 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+    padding: 9px;
+    font-weight: 400;
+    font-size: 20px;
+    border: 2x solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    
+    border-image-source: linear-gradient(to bottom, #fafa03 14%, #307918 100%);
+    
+}
+
+/* for banner button */
+.button {
+
+  transition: all 0.4s;
+    transition-timing-function:cubic-bezier(0.5, 4, 0, 1);
+}
+.button :hover{
+  background-color: white;
+  color: black;
+  transform: rotatex(20deg) rotateY(20deg);	
+}
+.buy{
+  background: linear-gradient(to bottom, #fafa03 14%, #307918 100%);
+  color: black;
+  font-weight: 500;
+  border: none;
+}
+
+.welcome{
+    color:rgb(24, 190, 24);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: myFont;
+    
+}
+
+
+#background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 623px */
+}
+/* @media screen and (max-width: 1024px)
+{
+ 
+  #logo{
+    width:12% ;
+  }
+  .buybutton{
+    width: 100%;
+ 
+  }
+} */
