@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
    preview: {
       port: 5000,
-      allowedHosts: ['sukuyanalatest.onrender.com'], // ✅ add your Render domain here
+     allowedHosts: ['sukuyana.com', 'www.sukuyana.com'], // ✅ add your Render domain here
     },
 })
  

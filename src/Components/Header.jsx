@@ -35,7 +35,7 @@ function Header() {
             <span>
 
               <a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/13dbBXQ5hn_4ZPCX-v5zWQo4HoXqqYUX9/view?usp=sharing'>
-              <button className='buybutton btn'> WHITEPAPER</button>  
+              <button className='buybutton '> WHITEPAPER</button>  
                
               </a>
             </span>
